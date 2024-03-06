@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="header">
+        <span class="badge">{{ badgeText }}</span>
+    </div>
+    <div class="list">
+        <button (click)="addItem(type)">+</button>
+        <div
+            cdkDropList
+            #list="cdkDropList"
+            [cdkDropListData]="items"
+            [cdkDropListConnectedTo]="templateRefs"
+            class="list"
+            (cdkDropListDropped)="drop($event)"
+        >
+        <div class="card" *ngFor="let item of items" cdkDrag>
+            <div>
+                <textarea [(ngModel)]="item.text" (input)="saveItem(type, item)"></textarea>
+                <i (click)="removeItem(type, item.id)" class="fa-solid fa-trash icon"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<app-list
+    type="todo"
+    badgeText="Todo"
+    (templateRefReadyEvent)="templateRefReady($event)"
+    [items]="todoItems"
+    [templateRefs]="otherListsTemplateRef"
+    class="list"
+    (saveItemEvent)="saveItem($event.type, $event.item)"
+    (addItemEvent)="addItem($event.type)"
+    (removeItemEvent)="removeItem($event.type, $event.itemId)"
+>
+</app-list>
+<app-list
+    type="progress"
+    badgeText="In Progress"
+    (templateRefReadyEvent)="templateRefReady($event)"
+    [items]="inProgressItems"
+    [templateRefs]="otherListsTemplateRef"
+    class="list"
+    (saveItemEvent)="saveItem($event.type, $event.item)"
+    (addItemEvent)="addItem($event.type)"
+    (removeItemEvent)="removeItem($event.type, $event.itemId)"
+>
+</app-list>
+<app-list
+    type="blocked"
+    badgeText="Blocked"
+    (templateRefReadyEvent)="templateRefReady($event)"
+    [items]="blockedItems"
+    [templateRefs]="otherListsTemplateRef"
+    class="list"
+    (saveItemEvent)="saveItem($event.type, $event.item)"
+    (addItemEvent)="addItem($event.type)"
+    (removeItemEvent)="removeItem($event.type, $event.itemId)"
+>
+</app-list>
+<app-list
+    type="completed"
+    badgeText="Completed"
+    (templateRefReadyEvent)="templateRefReady($event)"
+    [items]="completedItems"
+    [templateRefs]="otherListsTemplateRef"
+    class="list"
+    (saveItemEvent)="saveItem($event.type, $event.item)"
+    (addItemEvent)="addItem($event.type)"
+    (removeItemEvent)="removeItem($event.type, $event.itemId)"
+>
+</app-list>

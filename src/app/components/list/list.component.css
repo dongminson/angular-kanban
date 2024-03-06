@@ -1,0 +1,158 @@
+.list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 0;
+}
+
+.list {
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background: #f2f2f2;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.card {
+    color: #000;
+    font-size: 14px;
+    padding: 2px 2px 2px 2px;
+    margin: 4px 4px 4px 4px;
+    border-bottom: solid 1px #ccc;
+}
+
+.container {
+    flex: 1;
+    background-color: #f2f2f2;
+    margin: 4px 4px 4px 4px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    color: #000;
+    color-scheme: light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings: "kern";
+    height: 600px;
+    width: 220px;
+    line-height: 24px;
+    margin-top: 8px;
+    opacity: 1;
+    overflow: auto;
+    text-rendering: optimizelegibility;
+}
+
+.card:hover .icon {
+    visibility: visible;
+}
+
+textarea {
+    width: 80%;
+    margin: 4px 4px 4px 4px;
+    min-width: 0px;
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    position: relative;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    min-height: 70px;
+    vertical-align: top;
+    border-color: inherit;
+    background: inherit;
+    cursor: inherit;
+    resize: none;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+textarea:hover {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.icon {
+    float: right;
+    padding: 4px 4px 4px 4px;
+    visibility: hidden;
+}
+
+.card {
+    width: 180px;
+    height: 86px;
+    background: #63b3ed;
+    border: 1px solid #e2e8f0;
+    color: #1a202c;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+button {
+    align-items: center;
+    background-color: #d8d8d8;
+    border: none;
+    box-sizing: border-box;
+    color: #1a202c;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    height: 24px;
+    justify-content: center;
+    line-height: 14.4px;
+    margin: 10px;
+    min-width: 24px;
+    outline: transparent solid 2px;
+    overflow-wrap: break-word;
+    padding: 8px 0;
+    position: relative;
+    text-rendering: optimizelegibility;
+    text-transform: none;
+    transition: 0.2s;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.header {
+    display: flex;
+    width: 90%;
+}
+
+.badge {
+    margin-right: auto;
+    vertical-align: middle;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #add8e6;
+    color: #2a4365;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: max-content;
+}

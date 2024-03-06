@@ -1,0 +1,35 @@
+.heading {
+    background-clip: text;
+    color: #2a4365;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings: "kern";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    margin-top: 16px;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-rendering: optimizelegibility;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    color: rgb(26, 32, 44);
+    color-scheme: light;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-feature-settings: "kern";
+    line-height: 24px;
+    max-width: 1024px;
+    overflow-wrap: break-word;
+    padding-bottom: 40px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
+    padding-top: 40px;
+    text-rendering: optimizelegibility;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
